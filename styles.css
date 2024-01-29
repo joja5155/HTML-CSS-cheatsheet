@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body{
+     /* Old browsers */
+    background: #141E30;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-45deg, #35577D, #141E30);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* banner */
+  header{
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0;
+  }
+  
+  .navbar,a{
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: lightgrey; 
+    text-decoration: none;
+  }
+  .navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .paper {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 0;
+    margin: 0px 100px;
+  }
+  /* table */
+  h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  h2{
+    text-align: center;
+    color: orange;
+    padding: 20px 0;
+  }
+  table{
+    border: 0.25em solid;
+    text-align: center;
+    margin: 0 auto;    
+  }
+  thead{
+    background-color: cyan;
+  }
+  tbody{
+    background-color: lightgreen;
+    border: solid red; 
+    padding: 50px 70px;
+  }
+  th,td{
+    text-align: center;
+    line-height: 140%;
+    padding: 10px 30px;
+  }
+  button{
+    border: 2px solid #0c960c;
+    border-radius: 5px;
+    color: #F8F8F8;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;
+    background: linear-gradient(#1D1, #0ebc0e);
+    text-shadow: 0 -2px #0c960c;
+    margin: 20px 20px;
+    padding: 5px 20px;
+    font-size: larger;
+  }
+  button:hover {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+    background: #0ebc0e;
+    background: linear-gradient(#0ebc0e, #0c960c);
+    border-color: #064f06;
+    margin: 20px 20px;
+    padding: 5px 20px;
+    font-size: larger;
+  }
+  
+  button:active {
+    margin-top: 2px;
+    margin-bottom: -2px;
+    box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+    background: #0c960c;
+    background: linear-gradient(#0c960c, #0ebc0e);
+    margin: 20px 20px;
+    padding: 5px 20px;
+    font-size: larger;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+   header{
+    align-items: center;
+  }
+  .navbar,a{
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: lightgrey; 
+    text-decoration: none;
+    float: center;
+  }
+  .navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+  
+  @media only screen and (max-width: 380px) {
+  header{
+    align-items: center;
+  }
+  .navbar,a{
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: lightgrey; 
+    text-decoration: none;
+    float: center;
+  }
+  .navbar li{
+    display: inline-block;
+  }
+  
+  h1,h2{
+    text-align: center;
+    color: white;
+    clear: both;
+  }
+  table{
+    border: 0.25em solid;
+    text-align: center;
+    margin: 0 auto;
+  }
+  thead{
+    background-color: cyan;
+  }
+  tbody{
+    background-color: lightgreen;
+    border: solid red; 
+  }
+  }
